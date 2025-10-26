@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduOverseaz - Study Abroad & Visa Experts | Canada, UK, USA, Australia</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="EduOverseaz - Your trusted study abroad consultants with 13+ years experience. Expert guidance for Canada, UK, USA, Australia, Europe, Dubai & Singapore. Free consultation!">
+  <meta name="keywords" content="study abroad, visa consultancy, Canada education, UK universities, USA colleges, Australia study visa, Dubai pathway programs, Singapore education">
+  <meta name="author" content="EduOverseaz">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="EduOverseaz - Study Abroad & Visa Experts">
+  <meta property="og:description" content="13+ years of expertise in study abroad consulting. Get expert guidance for top universities worldwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eduoverseaz.com">
+  <meta property="og:image" content="https://eduoverseaz.com/og-image.jpg">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EduOverseaz - Study Abroad & Visa Experts">
+  <meta name="twitter:description" content="Your gateway to global education. Expert visa consultation for students.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- CountUp.js for animated numbers (retained for consistency) -->
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.min.js"></script>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    }
+    
+    nav {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.95);
+    }
+    
+    nav a {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #3B82F6;
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    #home {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    
+    #home::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+      z-index: 1;
+    }
+    
+    .service-card {
+      transition: all 0.3s ease;
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      height: 100%;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      border-color: #3B82F6;
+    }
+    
+    .badge-pulse {
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 12px rgba(59, 130, 246, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+      }
+    }
+
+  </style>
+</head>
+<body class="font-sans leading-relaxed text-gray-800 scroll-smooth bg-gray-50">
+
+
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="index.html" class="flex items-center gap-1 font-bold text-blue-700 hover:text-blue-800 transition logo-img">
+          <img src="logo.png"  style="width: 65px; height: 65px;" alt="EduOverseaz logo" class="logo-img">
+          <span class="text-lg sm:text-xl">EduOverseaz</span>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="about.html" class="text-gray-700 hover:text-blue-700 font-medium">About Us</a>
+          <a href="services.html" class="text-gray-700 hover:text-blue-700 font-medium">Services</a>
+          <a href="universities.html" class="text-gray-700 hover:text-blue-700 font-medium">Universities</a>
+          <a href="success-stories.html" class="text-gray-700 hover:text-blue-700 font-medium">Success Stories</a>
+          <a href="process.html" class="text-gray-700 hover:text-blue-700 font-medium">Process</a>
+          <a href="faqs.html" class="text-gray-700 hover:text-blue-700 font-medium">FAQs</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+          <a href="book.html" class="btn-primary text-white px-6 py-2.5 rounded-full font-medium badge-pulse">Book Consultation</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="p-2 rounded-md hover:bg-gray-100 transition">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-3 bg-white border-t">
+      <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">About Us</a>
+      <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Services</a>
+      <a href="universities.html" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Universities</a>
+      <a href="success-stories.html" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Success Stories</a>
+      <a href="process.html" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Process</a>
+      <a href="faqs.html" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">FAQs</a>
+      <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+      <a href="book.html" class="block btn-primary text-white px-6 py-3 rounded-full text-center font-medium">Book Consultation</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen bg-center bg-no-repeat bg-cover transition-all duration-1000 ease-in-out" style="background-image: url('a.jpg');">
+    <div class="relative z-10 flex items-center h-full text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Left: Content -->
+      <div class="w-full md:w-3/4 pr-0 md:pr-8 transition-all duration-500 ease-in-out" data-aos="fade-right">
+        <div class="mb-4">
+          <span class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm font-medium">
+            ✨ Trusted by 5000+ Students Worldwide
+          </span>
+        </div>
+        <h1 id="hero-heading" class="text-4xl md:text-6xl font-bold leading-tight mb-6 font-display">Welcome to EduOverseaz</h1>
+        <p id="hero-subheading" class="text-xl md:text-3xl font-medium mb-4">Your Gateway to Global Education and Visa Success</p>
+        <p id="hero-description" class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">With 13+ years of experience, we help you study in Canada, UK, USA, Australia, Europe, and via Dubai & Singapore.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="book.html" class="inline-block btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition">Book Free Consultation</a>
+          <a href="universities.html" class="inline-block bg-white/20 backdrop-blur-md text-white border-2 border-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-800 transition">Explore Universities</a>
+        </div>
+        <div class="mt-8 flex items-center gap-8">
+          <div>
+            <p class="text-3xl font-bold">98%</p>
+            <p class="text-sm text-gray-200">Visa Success Rate</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold">200+</p>
+            <p class="text-sm text-gray-200">Partner Universities</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold">24/7</p>
+            <p class="text-sm text-gray-200">Student Support</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Swiper -->
+      <div class="hidden md:block w-2/4 relative overflow-hidden" data-aos="fade-left">
+        <div class="swiper mySwiper max-w-full ml-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="a.jpg" class="slide-img w-[280px] h-[400px] object-cover rounded-3xl shadow-2xl" alt="Canada study abroad" />
+            </div>
+            <div class="swiper-slide">
+              <img src="b.jpg" class="slide-img w-[280px] h-[400px] object-cover rounded-3xl shadow-2xl" alt="Students celebrating success" />
+            </div>
+            <div class="swiper-slide">
+              <img src="c.jpg" class="slide-img w-[280px] h-[400px] object-cover rounded-3xl shadow-2xl" alt="Campus life overseas" />
+            </div>
+            <div class="swiper-slide">
+              <img src="d.jpg" class="slide-img w-[280px] h-[400px] object-cover rounded-3xl shadow-2xl" alt="Global education destinations" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Explore EduOverseaz -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-sm uppercase tracking-widest text-blue-600 font-semibold">Explore EduOverseaz</span>
+        <h2 class="text-4xl md:text-5xl font-display font-bold mt-4 mb-4">Tailored Support for Every Stage</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Dive deeper into the area that matters most to you—each dedicated page keeps the detailed content, resources, and guidance you've come to trust.</p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <a href="about.html" class="service-card hover:no-underline" data-aos="fade-up" data-aos-delay="50">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">About EduOverseaz</h3>
+          <p class="text-gray-600 mb-4">Discover our 13+ year journey, mission, and the team that guides thousands of students abroad.</p>
+          <span class="text-blue-600 font-semibold inline-flex items-center gap-2">
+            Meet the team
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a href="services.html" class="service-card hover:no-underline" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Our Services</h3>
+          <p class="text-gray-600 mb-4">From profile evaluation to visa filing and post-arrival assistance, explore every service in detail.</p>
+          <span class="text-blue-600 font-semibold inline-flex items-center gap-2">
+            View services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a href="universities.html" class="service-card hover:no-underline" data-aos="fade-up" data-aos-delay="150">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Partner Universities</h3>
+          <p class="text-gray-600 mb-4">Browse global study destinations, pathway options, and 200+ partner universities we connect you with.</p>
+          <span class="text-blue-600 font-semibold inline-flex items-center gap-2">
+            Explore destinations
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a href="success-stories.html" class="service-card hover:no-underline" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Success Stories</h3>
+          <p class="text-gray-600 mb-4">Read inspiring student journeys, testimonials, and real admission and visa wins across the globe.</p>
+          <span class="text-blue-600 font-semibold inline-flex items-center gap-2">
+            Celebrate success
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 mt-12">
+        <a href="process.html" class="service-card hover:no-underline" data-aos="fade-up" data-aos-delay="250">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Our Proven Process</h3>
+          <p class="text-gray-600 mb-4">Understand every milestone of your overseas education journey with our step-by-step guidance.</p>
+          <span class="text-blue-600 font-semibold inline-flex items-center gap-2">
+            Review the roadmap
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a href="faqs.html" class="service-card hover:no-underline" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">FAQs & Guidance</h3>
+          <p class="text-gray-600 mb-4">Find clear answers to visas, courses, finances, and more—curated from thousands of counselling sessions.</p>
+          <span class="text-blue-600 font-semibold inline-flex items-center gap-2">
+            Get answers
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="mt-12 text-center" data-aos="fade-up" data-aos-delay="350">
+        <a href="book.html" class="inline-flex items-center justify-center gap-2 btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition">
+          Start Your Consultation
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Logos -->
+  <section class="py-12 bg-gray-50 border-t border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-80">
+        <img src="https://via.placeholder.com/120x60" alt="ICEF Certified" class="h-12 grayscale hover:grayscale-0 transition">
+        <img src="https://via.placeholder.com/120x60" alt="British Council" class="h-12 grayscale hover:grayscale-0 transition">
+        <img src="https://via.placeholder.com/120x60" alt="IELTS Partner" class="h-12 grayscale hover:grayscale-0 transition">
+        <img src="https://via.placeholder.com/120x60" alt="TOEFL Certified" class="h-12 grayscale hover:grayscale-0 transition">
+        <img src="https://via.placeholder.com/120x60" alt="PTE Academic" class="h-12 grayscale hover:grayscale-0 transition">
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/917669087866" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition z-50">
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+    </svg>
+  </a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.AOS) {
+        AOS.init({
+          duration: 800,
+          easing: 'ease-in-out',
+          once: true,
+          offset: 100
+        });
+      }
+
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      const hero = document.getElementById('home');
+      const headingEl = document.getElementById('hero-heading');
+      const subheadingEl = document.getElementById('hero-subheading');
+      const descriptionEl = document.getElementById('hero-description');
+
+      const contentData = {
+        'a.jpg': {
+          heading: "Welcome to EduOverseaz",
+          subheading: "Your Gateway to Global Education and Visa Success",
+          description: "With 13+ years of experience, we help you study in Canada, UK, USA, Australia, Europe, and via Dubai & Singapore."
+        },
+        'b.jpg': {
+          heading: "Study in Top Global Universities",
+          subheading: "Canada | UK | USA | Australia",
+          description: "We guide you from application to visa approval and beyond."
+        },
+        'c.jpg': {
+          heading: "Fast-Track Your Visa Success",
+          subheading: "Get Expert Support with Zero Cost",
+          description: "Free consultations, real success stories, and trusted partnerships."
+        },
+        'd.jpg': {
+          heading: "Explore Education Beyond Borders",
+          subheading: "Dubai | Singapore | Europe",
+          description: "Innovative programs. World-class campuses. Complete assistance."
+        }
+      };
+
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        speed: 800,
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25
+          },
+          1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 30
+          }
+        }
+      });
+
+      const updateHeroContent = (imageName) => {
+        if (!contentData[imageName]) {
+          return;
+        }
+
+        [headingEl, subheadingEl, descriptionEl].forEach(el => {
+          if (el) {
+            el.style.opacity = '0';
+          }
+        });
+
+        setTimeout(() => {
+          if (headingEl) headingEl.textContent = contentData[imageName].heading;
+          if (subheadingEl) subheadingEl.textContent = contentData[imageName].subheading;
+          if (descriptionEl) descriptionEl.textContent = contentData[imageName].description;
+
+          [headingEl, subheadingEl, descriptionEl].forEach(el => {
+            if (el) {
+              el.style.opacity = '1';
+            }
+          });
+        }, 300);
+      };
+
+      const applySlideState = (slide) => {
+        if (!slide) {
+          return;
+        }
+        const img = slide.querySelector('img');
+        if (!img) {
+          return;
+        }
+
+        hero.style.backgroundImage = `url('${img.src}')`;
+        const imageName = img.src.split('/').pop();
+        updateHeroContent(imageName);
+      };
+
+      swiper.on('slideChangeTransitionStart', () => {
+        const currentSlide = swiper.slides[swiper.activeIndex];
+        applySlideState(currentSlide);
+      });
+
+      if (swiper.slides && swiper.slides.length) {
+        applySlideState(swiper.slides[swiper.activeIndex]);
+      }
+
+      [headingEl, subheadingEl, descriptionEl].forEach(el => {
+        if (el) {
+          el.style.transition = 'opacity 0.3s ease-in-out';
+        }
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="text-2xl font-bold mb-4 flex items-center">
+            <span class="text-3xl mr-2">🌍</span>
+            EduOverseaz
+          </h3>
+          <p class="text-gray-400 mb-4">Your trusted partner for global education since 2012.</p>
+          <div class="flex gap-3">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+              <span>f</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+              <span>in</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+              <span>ig</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+              <span>yt</span>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Our Services</a></li>
+            <li><a href="universities.html" class="hover:text-white transition">Partner Universities</a></li>
+            <li><a href="success-stories.html" class="hover:text-white transition">Success Stories</a></li>
+            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Study Destinations</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Study in Canada</a></li>
+            <li><a href="#" class="hover:text-white transition">Study in UK</a></li>
+            <li><a href="#" class="hover:text-white transition">Study in USA</a></li>
+            <li><a href="#" class="hover:text-white transition">Study in Australia</a></li>
+            <li><a href="#" class="hover:text-white transition">Study in Europe</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Contact Info</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>  Karol Bagh</li>
+            <li>New Delhi - 110005</li>
+            <li><a href="tel:+917669087866" class="hover:text-white transition">+91 7669087866</a></li>
+            <li><a href="mailto:info@eduoverseaz.com" class="hover:text-white transition">info@eduoverseaz.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 EduOverseaz. All rights reserved.</p>
+          <div class="flex gap-6 text-gray-400 text-sm">
+            <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+            <a href="#" class="hover:text-white transition">Disclaimer</a>
+            <a href="#" class="hover:text-white transition">Sitemap</a>
+          </div>
+        </div>
+        <p class="text-gray-500 text-xs mt-4 text-center">
+          EduOverseaz is registered with the Government of India. We are ICEF certified agents and official partners of 200+ universities worldwide.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
