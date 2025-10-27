@@ -56,7 +56,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <a class="flex items-center gap-3 font-bold text-blue-700 hover:text-blue-800 transition" href="index.html">
-          <img src=" logo.svg" alt="EduOverseaz logo" class="logo-img">
+          <img src="logo.png" alt="EduOverseaz logo" class="logo-img">
           <span class="text-lg sm:text-xl">EduOverseaz</span>
         </a>
 
@@ -69,7 +69,7 @@
           <a class="text-gray-700 hover:text-blue-700 font-medium" href="process.html">Process</a>
           <a class="text-gray-700 hover:text-blue-700 font-medium" href="faqs.html">FAQs</a>
           <a class="text-gray-700 hover:text-blue-700 font-medium" href="contact.html">Contact</a>
-          <a class="btn-primary text-white px-6 py-2.5 rounded-full font-medium badge-pulse" href="book.html">Book
+          <a class="btn-primary text-white px-6 py-2.5 rounded-full font-medium badge-pulse" href="contact">Book
             Consultation</a>
         </div>
 
@@ -93,13 +93,13 @@
       <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="process.html">Process</a>
       <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="faqs.html">FAQs</a>
       <a class="block py-2 text-gray-700 hover:text-blue-700 font-medium" href="contact.html">Contact</a>
-      <a class="block btn-primary text-white px-6 py-3 rounded-full text-center font-medium" href="book.html">Book
+      <a class="block btn-primary text-white px-6 py-3 rounded-full text-center font-medium" href="contact">Book
         Consultation</a>
     </div>
   </nav>
 
   <div class="min-h-screen">
-    <section class="py-20 bg-gradient-to-br from-blue-600 to-indigo-700 text-white" id="contact">
+    <section class="py-20 bg-gradient-to-br from-green-200 to-blue-700 text-white" id="contact">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display" data-aos="fade-up">Get in Touch</h2>
@@ -133,7 +133,6 @@
                   <div>
                     <p class="font-semibold mb-1">Phone</p>
                     <p class="opacity-90"><a class="hover:underline" href="tel:+917669087866">+91 7669087866</a></p>
-                    <p class="opacity-90"><a class="hover:underline" href="tel:+911141050505">+91 11 4105 0505</a></p>
                   </div>
                 </div>
                 <div class="flex items-start gap-4">
@@ -145,18 +144,11 @@
                   <div>
                     <p class="font-semibold mb-1">Email</p>
                     <p class="opacity-90"><a class="hover:underline"
-                        href="mailto:info@eduoverseaz.com">info@eduoverseaz.com</a></p>
+                        href="mailto:harnish@eduoverseaz.com">harnish@eduoverseaz.com</a></p>
                   </div>
                 </div>
                 <div class="flex items-start gap-4">
-                  <svg class="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2"></path>
-                  </svg>
-                  <div>
-                    <p class="font-semibold mb-1">Office Hours</p>
-                    <p class="opacity-90">Mon - Sat: 10:00 AM - 7:00 PM<br />Sunday: By Appointment</p>
-                  </div>
+                 
                 </div>
               </div>
               <div class="mt-8">
@@ -188,23 +180,48 @@
               <form class="space-y-4" id="quickInquiryForm">
                 <input
                   class="w-full px-4 py-3 rounded-lg bg-white/20 placeholder-white/70 text-white border border-white/30 focus:outline-none focus:border-white"
-                  name="name" placeholder="Your Name" type="text" />
+                  name="name" placeholder="Your Name *" type="text" required />
                 <input
                   class="w-full px-4 py-3 rounded-lg bg-white/20 placeholder-white/70 text-white border border-white/30 focus:outline-none focus:border-white"
-                  name="email" placeholder="Email Address" type="email" />
+                  name="email" placeholder="Email Address *" type="email" required />
                 <input
                   class="w-full px-4 py-3 rounded-lg bg-white/20 placeholder-white/70 text-white border border-white/30 focus:outline-none focus:border-white"
                   name="phone" placeholder="Phone Number" type="tel" />
                 <select
                   class="w-full px-4 py-3 rounded-lg bg-white/20 text-white border border-white/30 focus:outline-none focus:border-white"
-                  name="country">
-                  <option class="text-gray-800 bg-white text-gray-800" value="">Preferred Country</option>
-                  <option class="text-gray-800 bg-white" value="Canada">Canada</option>
-                  <option class="text-gray-800 bg-white" value="United Kingdom">United Kingdom</option>
-                  <option class="text-gray-800 bg-white" value="USA">USA</option>
+                  name="country" required>
+                  <option class="text-gray-800 bg-white text-gray-800" value="">Preferred Country *</option>
                   <option class="text-gray-800 bg-white" value="Australia">Australia</option>
-                  <option class="text-gray-800 bg-white" value="Singapore">Singapore</option>
+                  <option class="text-gray-800 bg-white" value="Austria">Austria</option>
+                  <option class="text-gray-800 bg-white" value="Belgium">Belgium</option>
+                  <option class="text-gray-800 bg-white" value="Canada">Canada</option>
+                  <option class="text-gray-800 bg-white" value="China">China</option>
+                  <option class="text-gray-800 bg-white" value="Cyprus">Cyprus</option>
+                  <option class="text-gray-800 bg-white" value="Denmark">Denmark</option>
                   <option class="text-gray-800 bg-white" value="Dubai">Dubai</option>
+                  <option class="text-gray-800 bg-white" value="Finland">Finland</option>
+                  <option class="text-gray-800 bg-white" value="France">France</option>
+                  <option class="text-gray-800 bg-white" value="Germany">Germany</option>
+                  <option class="text-gray-800 bg-white" value="Hungary">Hungary</option>
+                  <option class="text-gray-800 bg-white" value="Ireland">Ireland</option>
+                  <option class="text-gray-800 bg-white" value="Italy">Italy</option>
+                  <option class="text-gray-800 bg-white" value="Japan">Japan</option>
+                  <option class="text-gray-800 bg-white" value="Lithuania">Lithuania</option>
+                  <option class="text-gray-800 bg-white" value="Malaysia">Malaysia</option>
+                  <option class="text-gray-800 bg-white" value="Malta">Malta</option>
+                  <option class="text-gray-800 bg-white" value="Mauritius">Mauritius</option>
+                  <option class="text-gray-800 bg-white" value="Netherlands">Netherlands</option>
+                  <option class="text-gray-800 bg-white" value="New Zealand">New Zealand</option>
+                  <option class="text-gray-800 bg-white" value="Poland">Poland</option>
+                  <option class="text-gray-800 bg-white" value="Russia">Russia</option>
+                  <option class="text-gray-800 bg-white" value="Singapore">Singapore</option>
+                  <option class="text-gray-800 bg-white" value="South Korea">South Korea</option>
+                  <option class="text-gray-800 bg-white" value="Spain">Spain</option>
+                  <option class="text-gray-800 bg-white" value="Sweden">Sweden</option>
+                  <option class="text-gray-800 bg-white" value="Switzerland">Switzerland</option>
+                  <option class="text-gray-800 bg-white" value="UK">UK</option>
+                  <option class="text-gray-800 bg-white" value="USA">USA</option>
+                  <option class="text-gray-800 bg-white" value="Vietnam">Vietnam</option>
                 </select>
                 <textarea
                   class="w-full px-4 py-3 rounded-lg bg-white/20 placeholder-white/70 text-white border border-white/30 focus:outline-none focus:border-white"
@@ -274,7 +291,7 @@
               Call Now: +91 7669087866
             </a>
             <a class="bg-gray-100 text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 transition inline-flex items-center justify-center gap-2"
-              href="mailto:info@eduoverseaz.com">
+              href="mailto:harnish@eduoverseaz.com">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
                 <path
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
@@ -283,9 +300,7 @@
               Email Us
             </a>
           </div>
-          <p class="mt-6 text-sm text-gray-600">
-            <span class="font-semibold">Office Hours:</span> Mon-Sat 10 AM - 7 PM | Walk-ins Welcome!
-          </p>
+         
         </div>
       </div>
     </section>
@@ -328,7 +343,6 @@
             <li><a class="hover:text-white transition" href="services.html">Our Services</a></li>
             <li><a class="hover:text-white transition" href="universities.html">Partner Universities</a></li>
             <li><a class="hover:text-white transition" href="success-stories.html">Success Stories</a></li>
-            <li><a class="hover:text-white transition" href="#">Blog</a></li>
           </ul>
         </div>
 
@@ -348,15 +362,17 @@
           <ul class="space-y-2 text-gray-400">
             <li> Karol Bagh</li>
             <li>New Delhi - 110005</li>
+            <li>Ahmedabad </li>
+            <li>Punjab </li>
             <li><a class="hover:text-white transition" href="tel:+917669087866">+91 7669087866</a></li>
-            <li><a class="hover:text-white transition" href="mailto:info@eduoverseaz.com">info@eduoverseaz.com</a></li>
+            <li><a class="hover:text-white transition" href="mailto:harnish@eduoverseaz.com">harnish@eduoverseaz.com</a></li>
           </ul>
         </div>
       </div>
 
       <div class="border-t border-gray-800 pt-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 EduOverseaz. All rights reserved.</p>
+          <p class="text-gray-400 mb-4 md:mb-0">&copy; 2012 EduOverseaz. All rights reserved.</p>
           <div class="flex gap-6 text-gray-400 text-sm">
             <a class="hover:text-white transition" href="privacy.html">Privacy Policy</a>
             <a class="hover:text-white transition" href="#">Terms of Service</a>
@@ -367,6 +383,34 @@
       </div>
     </div>
   </footer>
+
+  <!-- Custom Success/Error Modal -->
+  <style>
+    #customModal {
+      transition: opacity 0.3s ease;
+    }
+    #modalContent {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      animation: modalBounce 0.5s ease;
+    }
+    @keyframes modalBounce {
+      0% { transform: scale(0.7); opacity: 0; }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+  <div id="customModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 backdrop-blur-sm" style="display: none;">
+    <div id="modalContent" class="bg-white rounded-3xl p-8 max-w-md mx-4 shadow-2xl">
+      <div class="text-center">
+        <div id="modalIcon" class="mx-auto mb-4"></div>
+        <h3 id="modalTitle" class="text-2xl font-bold mb-2"></h3>
+        <p id="modalMessage" class="text-gray-600 mb-6 leading-relaxed"></p>
+        <button id="modalCloseBtn" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition transform hover:scale-105">
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- WhatsApp Float Button -->
   <a class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition z-50"
@@ -379,6 +423,67 @@
   </a>
 
   <script>
+    // Custom Modal Functions
+    function showModal(type, title, message) {
+      const modal = document.getElementById('customModal');
+      const modalContent = document.getElementById('modalContent');
+      const modalIcon = document.getElementById('modalIcon');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalMessage = document.getElementById('modalMessage');
+      const modalBtn = document.getElementById('modalCloseBtn');
+
+      // Set icon based on type
+      if (type === 'success') {
+        modalIcon.innerHTML = `
+          <svg class="w-20 h-20 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        `;
+        modalTitle.className = 'text-2xl font-bold mb-2 text-green-600';
+        modalBtn.className = 'bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition';
+      } else if (type === 'error') {
+        modalIcon.innerHTML = `
+          <svg class="w-20 h-20 text-red-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        `;
+        modalTitle.className = 'text-2xl font-bold mb-2 text-red-600';
+        modalBtn.className = 'bg-red-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition';
+      } else if (type === 'warning') {
+        modalIcon.innerHTML = `
+          <svg class="w-20 h-20 text-yellow-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+        `;
+        modalTitle.className = 'text-2xl font-bold mb-2 text-yellow-600';
+        modalBtn.className = 'bg-yellow-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-700 transition';
+      }
+
+      modalTitle.textContent = title;
+      modalMessage.textContent = message;
+
+      // Show modal with animation
+      modal.style.display = 'flex';
+      setTimeout(() => {
+        modal.classList.remove('hidden');
+        modalContent.style.transform = 'scale(1)';
+        modalContent.style.opacity = '1';
+      }, 10);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('customModal');
+      const modalContent = document.getElementById('modalContent');
+
+      modalContent.style.transform = 'scale(0.95)';
+      modalContent.style.opacity = '0';
+
+      setTimeout(() => {
+        modal.style.display = 'none';
+        modal.classList.add('hidden');
+      }, 200);
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
       if (window.AOS) {
         AOS.init({
@@ -401,6 +506,22 @@
           link.addEventListener('click', () => {
             mobileMenu.classList.add('hidden');
           });
+        });
+      }
+
+      // Modal close handlers
+      const modal = document.getElementById('customModal');
+      const modalBtn = document.getElementById('modalCloseBtn');
+
+      if (modalBtn) {
+        modalBtn.addEventListener('click', closeModal);
+      }
+
+      if (modal) {
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            closeModal();
+          }
         });
       }
     });
@@ -437,6 +558,11 @@
 
       inquiryForm.addEventListener('submit', async (event) => {
         event.preventDefault();
+
+        // Get submit button
+        const submitButton = inquiryForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+
         const formData = new FormData(inquiryForm);
         const name = (formData.get('name') || '').toString().trim();
         const email = (formData.get('email') || '').toString().trim();
@@ -444,10 +570,16 @@
         const country = (formData.get('country') || '').toString().trim();
         const message = (formData.get('message') || '').toString().trim();
 
-        if (!name || !email || !message) {
-          alert('Please provide your name, email address, and a short message.');
+        if (!name || !email || !country) {
+          showModal('warning', 'Missing Information', 'Please fill in all required fields: Name, Email Address, and Preferred Country.');
           return;
         }
+
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<svg class="animate-spin inline w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Sending...';
+        submitButton.style.opacity = '0.8';
+        submitButton.style.cursor = 'not-allowed';
 
         try {
           const response = await fetch(INQUIRY_API_ENDPOINT, {
@@ -463,12 +595,18 @@
             throw new Error(error.error || 'Unable to send inquiry.');
           }
 
-          alert('Thank you! Your inquiry has been sent successfully.');
+          showModal('success', 'Message Sent!', 'Thank you! Your inquiry has been sent successfully. We will get back to you soon.');
           inquiryForm.reset();
           localStorage.removeItem('eduoverseaz_form');
         } catch (error) {
           console.error('Inquiry submission failed:', error);
-          alert('We could not send your inquiry. Please try again later or contact us directly at +91 7669087866.');
+          showModal('error', 'Unable to Send', 'We could not send your inquiry. Please try again later or contact us directly at +91 7669087866.');
+        } finally {
+          // Reset button state
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+          submitButton.style.opacity = '1';
+          submitButton.style.cursor = 'pointer';
         }
       });
     });
