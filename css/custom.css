@@ -32,24 +32,35 @@ html {
     
     nav a {
       position: relative;
-      transition: color 0.3s ease;
+      transition: transform 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+      display: inline-block;
+      text-decoration: none !important;
+      border-bottom: none !important;
     }
-    
+
+    nav a:hover {
+      transform: scale(1.1) translateY(-2px);
+      color: #3B82F6;
+      font-weight: 700;
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+
     nav a::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: #3B82F6;
-      transition: width 0.3s ease;
+      display: none !important;
     }
-    
-    nav a:hover::after {
-      width: 100%;
+
+    /* Book Consultation button - no hover effects */
+    nav a.btn-primary {
+      transform: none !important;
     }
-    
+
+    nav a.btn-primary:hover {
+      transform: translateY(-2px) !important;
+      color: #000000 !important;
+      font-weight: 500 !important;
+    }
+
     /* Hero Section Enhancement */
     #home {
       background-size: cover;
@@ -612,9 +623,9 @@ html {
   width: min(100%, 430px);
   padding: 32px;
   border-radius: 22px;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.78) 100%);
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.45);
+  background: linear-gradient(145deg, #1e293b 0%, #334155 50%, #475569 100%);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.4);
 }
 
 .journey-card::before {
@@ -623,7 +634,7 @@ html {
   inset: 0;
   border-radius: 22px;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.45), rgba(139, 92, 246, 0.2));
+  background: linear-gradient(135deg, rgba(71, 85, 105, 0.5), rgba(51, 65, 85, 0.3));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
@@ -694,9 +705,9 @@ html {
   max-width: 680px;
   padding: 40px 48px;
   border-radius: 28px;
-  background: radial-gradient(120% 140% at 50% 0%, rgba(96, 165, 250, 0.25) 0%, rgba(15, 23, 42, 0.95) 65%);
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.45);
+  background: linear-gradient(145deg, #1e293b 0%, #334155 50%, #475569 100%);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.4);
   text-align: center;
 }
 
@@ -705,8 +716,8 @@ html {
   position: absolute;
   inset: -2px;
   border-radius: 30px;
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.45), rgba(129, 140, 248, 0.2));
-  opacity: 0.7;
+  background: linear-gradient(135deg, rgba(71, 85, 105, 0.5), rgba(51, 65, 85, 0.3));
+  opacity: 0.6;
   z-index: 0;
 }
 
